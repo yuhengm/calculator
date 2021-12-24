@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <!-- Form send data entered to home route, so home has to have methods to handle posts -->
+    <form action="/" method="post">
+      <h1>BMI Calculator</h1>
+      <!-- Types have to be defined to work -->
+      <!-- placeholder tells what user should input -->
+      <!-- name should be unique to identify elements that will be later retrieved on our end -->
+      <input type="text" name="weight" placeholder="weight input in kg" />
+      <input type="text" name="height" placeholder="height input in m" />
+      <button type="submit" name="submit">Calculate BMI</button>
+    </form>
+  </body>
+</html>
